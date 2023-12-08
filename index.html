@@ -19,8 +19,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="https://cdn.rawgit.com/daneden/animate.css/v3.1.0/animate.min.css">
+    <script src="https://cdn.rawgit.com/matthieua/WOW/1.0.1/dist/wow.min.js"></script>
+    <script> new WOW().init(); </script>
   </head>
   <body>
+    
     <div class="app">
       <!-- Header -->
       <header class="header">
@@ -57,7 +61,7 @@
       <section class="welcome" id="home">
         <div class="container">
           <div class="welcome__inner">
-            <div class="welcome__content">
+            <div class="welcome__content wow bounceInLeft" data-wow-duration="1.5s">
               <h1>
                 Simple App that we
                 <span>CREATE</span>
@@ -79,7 +83,7 @@
       <section class="about" id="about">
         <div class="container">
           <div class="about__inner">
-            <div class="about__item">
+            <div class="about__item wow bounceInUp animated" data-wow-duration="1.5s">
               <div class="about__content">
                 <div class="about__icon">
                   <img
@@ -96,7 +100,7 @@
               </div>
             </div>
 
-            <div class="about__item">
+            <div class="about__item wow bounceInUp animated" data-wow-duration="1.5s" data-wow-delay="0.3s">
               <div class="about__content">
                 <div class="about__icon">
                   <img
@@ -112,7 +116,7 @@
               </div>
             </div>
 
-            <div class="about__item">
+            <div class="about__item wow bounceInUp animated" data-wow-duration="1.5s" data-wow-delay="0.6s">
               <div class="about__content">
                 <div class="about__icon">
                   <img
@@ -144,7 +148,7 @@
                 />
               </div>
               <div class="promotion__right">
-                <div class="promotion__item">
+                <div class="promotion__item wow bounceInRight" data-wow-duration="1.5s" >
                   <div class="promotion__icon">
                     <img
                       src="https://templatemo.com/templates/templatemo_540_lava_landing_page/assets/images/about-icon-01.png"
@@ -161,7 +165,7 @@
                   </div>
                 </div>
 
-                <div class="promotion__item">
+                <div class="promotion__item wow bounceInRight" data-wow-duration="1.5s" data-wow-delay="0.3s">
                   <div class="promotion__icon">
                     <img
                       src="https://templatemo.com/templates/templatemo_540_lava_landing_page/assets/images/about-icon-01.png"
@@ -178,7 +182,7 @@
                   </div>
                 </div>
 
-                <div class="promotion__item">
+                <div class="promotion__item wow bounceInRight" data-wow-duration="1.5s" data-wow-delay="0.6s">
                   <div class="promotion__icon">
                     <img
                       src="https://templatemo.com/templates/templatemo_540_lava_landing_page/assets/images/about-icon-01.png"
@@ -215,7 +219,7 @@
             </div>
             <div class="testimonials__content">
               <div class="testimonials__left">
-                <div class="testimonials__item">
+                <div class="testimonials__item wow bounceIn">
                   <div class="testimonials__stars">
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
@@ -231,7 +235,7 @@
                   <span>Web Analyst</span>
                 </div>
 
-                <div class="testimonials__item">
+                <div class="testimonials__item wow bounceIn" data-wow-delay="0.3s">
                   <div class="testimonials__stars">
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
@@ -247,10 +251,10 @@
                 </div>
               </div>
               <div class="testimonials__right">
-                <a href="" class="testimonials__box testimonials__box--prev"
+                <a href="" class="testimonials__box testimonials__box--prev wow bounceInRight" data-wow-duration="1.5s" data-wow-delay="0.3s"
                   ><</a
                 >
-                <a href="" class="testimonials__box testimonials__box--next"
+                <a href="" class="testimonials__box testimonials__box--next wow bounceInLeft" data-wow-duration="1.5s"
                   >></a
                 >
               </div>
@@ -264,7 +268,7 @@
       <section class="contact" id="contact">
         <div class="container">
           <div class="contact__inner">
-            <div class="contact__form">
+            <div class="contact__form  wow bounceInLeft"  data-wow-duration="1.2s">
               <input
                 class="form__input"
                 type="text"
@@ -307,10 +311,7 @@
       </section>
       <!-- End Contact -->
 
-
-      <!-- Footer -->
       
-      <!-- End Footer -->
     </div>
   </body>
 </html>
