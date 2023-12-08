@@ -1,0 +1,587 @@
+/* header */
+.header {
+
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 80px;
+    z-index: 999;
+}
+
+.header__nav {
+    width: 100%;
+    display: flex;
+}
+
+.header__logo {
+    align-items: center;
+    display: flex;
+    color: #191a20;
+    font-size: 28px;
+    font-weight: 700;
+    margin-right: 200px;
+}
+
+.header__menu {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: #fff;
+    padding: 0px 20px;
+    display: flex;
+}
+
+.header__item {
+    padding: 0 20px;
+}
+
+.header__item a {
+    display: block;
+    font-weight: 500;
+    font-size: 13px;
+    color: #7a7a7a;
+    transition: all 0.3s;
+    height: 40px;
+    line-height: 40px;
+}
+
+.header__item:hover>a {
+    color: #fba70b;
+}
+
+.header__item--submenu {
+    padding-right: 35px;
+    position: relative;
+    transition: all 0.3s ease 0s;
+}
+
+.header__item--submenu:hover ul {
+    display: block;
+    opacity: 1;
+}
+
+
+.header__item--submenu i {
+    color: #7a7a7a;
+    font-size: 15px;
+    top: 12px;
+    right: 6px;
+    position: absolute;
+}
+
+@keyframes slow {
+    0%   {opacity: 0;}
+    25%   {opacity: 0.25;}
+    50%  {opacity:0.5;}
+    75%  {opacity:0.75;}
+    100% {opacity:1;}
+  }
+
+.header__item--submenu ul {
+    width: 250px;
+    top: 40px;
+    left: 0px;
+    display: none;
+    position: absolute;
+    background: #fff;
+    animation-name: slow;
+    animation-duration: 0.3s;
+}
+
+.header__item--submenu ul li {
+    border-bottom: 1px solid #f5f5f5;
+    transition: all 0.3s ease 0s;
+}
+
+.header__item--submenu ul li:last-child {
+    border: none;
+}
+
+.header__item--submenu ul li:hover {
+    border-left: 4px solid #fba70b;
+}
+
+.header__item--submenu ul li:hover a {
+    color: #fba70b;
+
+}
+
+.header__item--submenu ul li a {
+    padding-left: 20px;
+    transition: all 0.3s ease 0s;
+}
+
+/* end header */
+
+
+
+/* welcome */
+.welcome {
+    width: 100%;
+    height: 100vh;
+    min-height: 800px;
+    background-image: url("https://templatemo.com/templates/templatemo_540_lava_landing_page/assets/images/banner-bg.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+
+}
+
+.welcome__inner {
+    /* padding: 150px 0; */
+    padding-top: 150px;
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+.welcome__content {
+    width: 25%;
+    margin-left: 0;
+    padding: 0 20px;
+}
+
+.welcome__content h1 {
+    font-size: 52px;
+    font-weight: bold;
+    line-height: 80px;
+    margin-bottom: 50px;
+}
+
+.welcome__content h1 span {
+    color: #FBA70B;
+}
+
+.welcome__content p {
+    font-size: 17px;
+    color: #7a7a7a;
+    line-height: 30px;
+    letter-spacing: 0.25px;
+    margin-bottom: 40px;
+}
+
+.welcome__content p a {
+    color: #007BFF;
+    transition: all 0.3s;
+}
+
+.welcome__content p a:hover {
+    color: #0056b3;
+}
+
+/* end welcome */
+
+
+/* about */
+.about {
+    margin-top: 150px;
+    position: relative;
+    z-index: 10;
+
+}
+
+.about__inner {
+    display: flex;
+    width: 100%;
+    height: 500px;
+
+    margin: 0 auto;
+}
+
+.about__item {
+
+    width: calc(100%/3);
+    height: 450px;
+    border-radius: 10px;
+    margin: 0 15px;
+    padding: 60px 40px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    text-align: center;
+}
+
+.about__content {
+    text-align: center;
+}
+
+.about__icon {
+    width: 90px;
+    aspect-ratio: 1/1;
+    margin: 0 auto;
+}
+
+.about__content img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.about__content h4 {
+    margin-top: 30px;
+    font-size: 22px;
+    font-weight: 500;
+    color: #1e1e1e;
+}
+
+.about__content p {
+    margin-top: 36px;
+    margin-bottom: 40px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #888;
+    line-height: 30px;
+}
+
+/* end about */
+
+
+/* promotion */
+.promotion {
+    padding: 100px 0;
+
+}
+
+.promotion__inner {
+    width: 100%;
+    height: 560px;
+    padding: 30px 0;
+}
+
+.promotion__content {
+    display: flex;
+}
+
+.promotion__left {
+    width: 50%;
+    position: relative;
+}
+
+.promotion__left::before {
+    z-index: 2;
+    content: "";
+    background-image: url("https://templatemo.com/templates/templatemo_540_lava_landing_page/assets/images/left-bg-decor.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -300px;
+    left: -59px;
+    width: 100%;
+    display: inline-block;
+    height: 110%;
+}
+
+.promotion__left img {
+    width: 85%;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+    z-index: 10;
+}
+
+.promotion__right {
+    width: 50%;
+    position: relative;
+}
+
+.promotion__right::before {
+    content: "";
+    background-image: url("https://templatemo.com/templates/templatemo_540_lava_landing_page/assets/images/right-bg-decor.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+    position: absolute;
+    width: 100%;
+    display: inline-block;
+    height: 110%;
+    top: 362px;
+    right: -61px;
+}
+
+
+.promotion__item {
+    width: 600px;
+    height: 150px;
+    margin: 15px 0;
+    padding: 10px 20px;
+    display: flex;
+}
+
+.promotion__icon {
+    width: 100px;
+    aspect-ratio: 1/1;
+}
+
+.promotion__icon img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.promotion__text {
+    margin-left: 30px;
+}
+
+.promotion__text h4 {
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.promotion__text p {
+    font-size: 15px;
+    line-height: 25px;
+    color: #888;
+}
+
+.promotion__text p a {
+    color: #007BFF;
+    transition: all 0.3s;
+}
+
+.promotion__text p a:hover {
+    color: #0056b3;
+}
+
+/* end promotion */
+
+
+
+/* testimonials */
+.testimonials {
+    padding: 50px 0;
+}
+
+.testimonials__inner {
+    width: 100%;
+    height: 560px;
+}
+
+.testimonials__title {
+
+    height: 150px;
+    width: 750px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.testimonials__title h2 {
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.testimonials__title h2 span {
+    color: #F4813F;
+}
+
+.testimonials__title p {
+    font-size: 15px;
+    color: #888888;
+    line-height: 30px;
+}
+
+.testimonials__content {
+    display: flex;
+    margin-top: 100px;
+}
+
+.testimonials__left {
+    display: flex;
+}
+
+.testimonials__item {
+    width: 400px;
+    aspect-ratio: 4/3;
+    margin: 0 45px;
+    padding: 45px 40px;
+    text-align: center;
+    background: linear-gradient(145deg, rgba(244, 129, 63, 1) 0%, rgba(241, 85, 106, 1) 100%);
+    border-radius: 10px;
+    color: #fff;
+    position: relative;
+}
+
+.testimonials__item::after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 120px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-image: url("https://templatemo.com/templates/templatemo_540_lava_landing_page/assets/images/testimonial-author-1.png");
+
+    background-size: contain;
+    top: -60px;
+    left: -60px;
+}
+
+.testimonials__stars {
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+.testimonials__stars i {
+    margin: 0 2px;
+}
+
+.testimonials__item h4 {
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.testimonials__item p {
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 200;
+    margin-bottom: 30px;
+}
+
+.testimonials__item span {
+    font-size: 13px;
+    font-weight: 200;
+}
+
+.testimonials__right {
+    position: relative;
+    flex: 1;
+}
+
+.testimonials__box {
+    position: absolute;
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(145deg, rgba(244, 129, 63, 1) 0%, rgba(241, 85, 106, 1) 100%);
+    border-radius: 10px;
+    font-size: 43px;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    line-height: 80px;
+}
+
+.testimonials__box--prev {
+    z-index: 1;
+    top: 25%;
+    left: 30%;
+}
+
+.testimonials__box--next {
+    z-index: 3;
+    top: 45%;
+    left: 60%;
+}
+
+/* end testimonials */
+
+
+/* contact */
+.contact {
+    height: 600px;
+    margin-top: 80px;
+    background-image: url("https://templatemo.com/templates/templatemo_540_lava_landing_page/assets/images/footer-bg.png");
+    padding: 100px 0;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.contact__inner {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact__form {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 50%;
+    height: 100%;
+    background: #fff;
+    padding: 30px 45px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.form__input {
+    height: 50px;
+    width: calc(50% - 15px);
+    padding: 20px;
+    color: #777;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    outline: none;
+}
+
+.form__message {
+    width: 100%;
+    height: 150px;
+    resize: none;
+    padding: 20px;
+    color: #777;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    outline: none;
+}
+
+.form__button {
+    margin: 0 auto;
+}
+
+.contact__text {
+    padding: 50px 30px;
+    color: #fff;
+    width: 50%;
+}
+
+.contact__text h2 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.contact__text h2 span {
+    color: #FBA70B;
+}
+
+.contact__text p {
+    font-size: 15px;
+    line-height: 25px;
+    margin-bottom: 25px;
+}
+
+.contact__socials {
+    margin-top: 45px;
+}
+
+.contact__item {
+    margin-right: 20px;
+}
+
+.contact__item i {
+    display: inline-block;
+    width: 50px;
+    aspect-ratio: 1/1;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    transition: all 0.3s ease-in-out;
+}
+
+.contact__item i:hover{
+    border: none;
+    background: #FBA70B;
+    opacity: 0.5;
+}
+
+.contact__footer{
+    margin-top: 150px;
+    border-top: 1px solid #fff;
+    width: 100%;
+}
+
+/* end contact */
+
+
+
