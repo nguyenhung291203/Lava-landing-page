@@ -14,7 +14,7 @@
 .header__nav {
     width: 100%;
     display: flex;
-    
+
 }
 
 .header__logo {
@@ -141,13 +141,16 @@
     .header {
         background: #fff;
     }
-    .header__nav{
+
+    .header__nav {
         margin-left: 0;
     }
-    .header__logo{
+
+    .header__logo {
         margin-right: 20px;
     }
-    .header__item a{
+
+    .header__item a {
         font-size: 10px;
     }
 
@@ -156,28 +159,29 @@
         display: block;
     } */
 }
-@media (max-width: 767.98px){
-    .header__nav{
-        width:500px;
+
+@media (max-width: 767.98px) {
+    .header__nav {
+        width: 500px;
         justify-content: space-between;
     }
-    /* .header__logo{
-        margin-right: 150px;
-    } */
-     .header__menu {
+
+    .header__menu {
         display: none;
     }
+
     .header__bar {
         display: block;
-        
+    }
+
+}
+
+@media (max-width: 575.98px) {
+    .header__nav {
+        width: 300px;
     }
 }
 
-@media (max-width: 575.98px){
-    .header__nav{
-        width:300px;
-    }
-}
 /* end header */
 
 
@@ -257,11 +261,13 @@
         margin-top: 600px;
     }
 }
-@media (max-width: 575.98px){
+
+@media (max-width: 575.98px) {
     .welcome {
         min-height: 1290px;
     }
 }
+
 /* end welcome */
 
 
@@ -445,7 +451,7 @@
     display: inline-block;
     height: 110%;
     top: 362px;
-    right: -61px;
+    right: -11px;
 }
 
 
@@ -658,8 +664,6 @@
 
 
 @media(max-width:991.98px) {
-
-
     .testimonials__left {
         width: 100%;
     }
@@ -682,11 +686,12 @@
 
 }
 
-@media (max-width: 767.98px){
-    .testimonials__title{
-        width:fit-content;
+@media (max-width: 767.98px) {
+    .testimonials__title {
+        width: fit-content;
     }
 }
+
 /* contact */
 .contact {
     /* height: 700px; */
@@ -742,7 +747,7 @@
 
 .form__button {
     margin: 30px auto 0 auto;
-    
+
 }
 
 .contact__text {
@@ -827,15 +832,17 @@
 
 }
 
-@media (max-width: 767.98px){
-    .contact{
+@media (max-width: 767.98px) {
+    .contact {
         /* min-height: 1100px ; */
         padding-bottom: 30px;
     }
-    .form__input{
+
+    .form__input {
         width: 100%;
     }
-    .form__input:first-child{
+
+    .form__input:first-child {
         margin-bottom: 30px;
     }
 }
