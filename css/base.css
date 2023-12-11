@@ -142,10 +142,6 @@ table {
     border-spacing: 0;
 }
 
-.container {
-    width: 1140px;
-    margin: 0 auto;
-}
 
 a {
     text-decoration: none;
@@ -177,3 +173,37 @@ body {
 .button-orange {
     background: #f4813f;
 }
+
+
+/* container */
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1199.98px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .container {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+}
+
+/* end container */
